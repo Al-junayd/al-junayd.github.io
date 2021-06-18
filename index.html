@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>single price Grid Componenet</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+          "top top"
+          "left right";
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 25px;
+      }
+      p {
+        font-weight: 400;
+      }
+      h1,
+      h2,
+      h3 {
+        font-weight: 700;
+      }
+      .top {
+        background-color: rgb(255, 255, 255);
+        grid-area: top;
+        padding-top: 2em;
+        padding-left: 2em;
+
+        border-top-right-radius: 15px;
+      }
+      .right {
+        background-color: hsl(179, 62%, 53%);
+        text-align: left;
+        color: rgba(255, 255, 255, 0.808);
+        padding-left: 2em;
+        padding-bottom: 4em;
+        padding-top: 2em;
+        padding-right: 2em;
+        grid-area: right;
+      }
+      .left {
+        background-color: hsl(179, 48%, 53%);
+        grid-area: left;
+        padding-left: 2em;
+        padding-top: 2em;
+      }
+      h3,
+      .price {
+        color: white;
+      }
+      .price {
+        font-size: xx-large;
+      }
+      .left > p {
+        color: rgba(255, 255, 255, 0.808);
+      }
+      .price2 {
+        color: rgba(255, 255, 255, 0.466);
+        font-weight: 500;
+      }
+      .head1 {
+        color: rgba(0, 128, 128, 0.836);
+      }
+      .head2 {
+        color: hsl(71, 73%, 54%);
+      }
+      .head3 {
+        font-style: normal;
+        color: rgba(0, 0, 0, 0.404);
+        font-weight: 500;
+      }
+      .button {
+        color: white;
+        background-color: yellowgreen;
+        border: none;
+        width: 170px;
+        padding: 9px;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <article class="top">
+        <h1 class="head1">Join Our Community</h1>
+        <h3 class="head2">30-day, Hassle-free money back guarantee</h3>
+        <p class="head3">
+          Gain access to our full library of tutorials along with expert code
+          reviews.
+        </p>
+        <p class="head3">
+          Perfect for any developers who are erious about honing their skills
+        </p>
+      </article>
+      <aside class="left">
+        <h3>Monthly Subscrption</h3>
+        <p>
+          <span class="price">$29</span> <span class="price2">per month</span>
+        </p>
+        <p>Full acess for less than $1 a day</p>
+        <form action="https://wwww.example.com" method="get"></form>
+        <input class="button" type="button" value="sign up" />
+      </aside>
+
+      <aside class="right">
+        <h3>Why Us</h3>
+        Tutorials by industry experts<br />
+        Peer and expert code reviews<br />
+        coding exercises<br />
+        Access to our github repos<br />
+        community forum <br />
+        Flashcard decks<br />
+        New videos every week<br />
+      </aside>
+    </div>
+  </body>
+</html>
